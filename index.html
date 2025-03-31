@@ -16,8 +16,8 @@
                 display: flex;
                 flex-direction: column;
                 position: relative;
-                overflow-x: hidden; /* Prevent horizontal scrolling */
-                width: 100vw; /* Ensure the width fits the viewport */
+                overflow-x: hidden;
+                width: 100vw;
             }
 
             body {
@@ -25,8 +25,16 @@
                 min-height: 100vh;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                /* Removed justify-content: center to allow margin-top to work */
                 align-items: center;
+            }
+
+            /* New container for the main content */
+            .main-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 2rem; /* Push the content down slightly */
             }
 
             #box, #top {
@@ -40,7 +48,7 @@
                 color: #e0e0e0;
                 height: 20em;
                 width: 30em;
-                max-width: 80%; /* Ensure the box doesn't exceed the viewport width */
+                max-width: 80%;
                 max-height: 80%;
                 background: rgba(40, 40, 40, 0.95);
                 border-radius: 1rem;
@@ -127,7 +135,7 @@
 
             footer {
                 width: 100%;
-                padding: 0.5rem 1rem;
+                padding: 0.7rem 1rem; /* Increased vertical padding to make footer taller */
                 color: #e0e0e0;
                 font-style: italic;
                 font-size: 0.9rem;
@@ -146,13 +154,13 @@
             /* GitHub Button Styles */
             .github-button {
                 position: absolute;
-                right: 1rem; /* Position in the bottom right */
-                bottom: 0.5rem; /* Align to the bottom of the footer */
+                right: 1rem;
+                bottom: 0.3rem; /* Moved down slightly from 0.5rem */
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 2px 6px; /* Reduced padding to make the button smaller */
-                gap: 4px; /* Reduced gap between SVG and text */
+                padding: 2px 6px;
+                gap: 4px;
                 background-color: #181717;
                 outline: 2px #181717 solid;
                 outline-offset: -2px;
@@ -162,18 +170,18 @@
                 transition: 400ms;
                 z-index: 10;
                 text-decoration: none;
-                font-style: normal; /* Remove italic style from the button */
+                font-style: normal;
             }
 
             .github-button .text {
                 color: white;
                 font-weight: 700;
-                font-size: 0.6em; /* Further reduced font size for smaller button */
+                font-size: 0.6em;
                 transition: 400ms;
             }
 
             .github-button svg {
-                width: 12px; /* Reduced SVG size */
+                width: 12px;
                 height: 12px;
             }
 
@@ -196,13 +204,16 @@
     </head>
 
     <body>
-        <div id="top">
-            <h1>Not EmulatorJS</h1>
-            <img src="docs/Logo-light.png" alt="Logo" class="logo">
-        </div>
-        <div id="box">
-            <input type="file" id="input">
-            Drag ROM file or Click Here
+        <!-- Wrapped #top and #box in a new container -->
+        <div class="main-content">
+            <div id="top">
+                <h1>Not EmulatorJS</h1>
+                <img src="docs/Logo-light.png" alt="Logo" class="logo">
+            </div>
+            <div id="box">
+                <input type="file" id="input">
+                Drag ROM file or Click Here
+            </div>
         </div>
         <footer>
             <span>add text here</span>
