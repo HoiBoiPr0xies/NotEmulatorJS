@@ -3,10 +3,10 @@
   "version": "4.2.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/EmulatorJS/EmulatorJS.git"
+    "url": "https://github.com/HoiBoiPr0xies/NotEmulatorJS"
   },
   "license": "GPL-3.0",
-  "description": "EmulatorJS is a frontend for RetroArch in the web browser.",
+  "description": "Not EmulatorJS is a frontend for RetroArch in the web browser.",
   "scripts": {
     "start": "http-server"
   },
