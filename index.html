@@ -111,6 +111,7 @@
                 height: 130px;
                 filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
                 transition: transform 0.3s ease;
+                cursor: pointer;
             }
 
             .logo:hover {
@@ -197,6 +198,22 @@
             .github-button:hover svg path {
                 fill: #181717;
             }
+
+            /* New styles for the Supported Systems link */
+            .supported-systems-link {
+                color: #e0e0e0;
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                font-size: 1.25rem;
+                text-decoration: underline; /* Ensures the text is underlined */
+                margin: 1rem 0; /* Adds spacing above and below the link */
+                transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+            }
+
+            .supported-systems-link:hover {
+                color: #ffffff; /* Brightens the color on hover */
+                transform: translateY(-2px); /* Slight lift effect on hover, matching the #box hover */
+            }
         </style>
     </head>
 
@@ -212,6 +229,8 @@
                 <input type="file" id="input">
                 Drag ROM file or Click Here
             </div>
+            <!-- Added Supported Systems link below the #box -->
+            <a href="https://justpaste.it/j6hh0" target="_blank" class="supported-systems-link">Supported Systems</a>
         </div>
         <footer>
             <span>Not EmulatorJS: A lightweight, browser-based emulator using EmulatorJS.</span>
