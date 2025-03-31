@@ -4,106 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not EmulatorJS</title>
-    <link rel="icon" href="docs/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body, html {
-            height: 100%;
-            background-color: #121212;
+        body {
+            background-color: #111;
             color: white;
-            font-family: "Arial", sans-serif;
+            font-family: Arial, sans-serif;
             display: flex;
-            align-items: center;
-            justify-content: center;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        h1 {
-            font-size: 2rem;
-            font-weight: bold;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        .container {
+            text-align: center;
         }
-
         .logo {
-            width: 130px;
-            height: 130px;
-            filter: drop-shadow(0 0 10px white);
-            transition: transform 0.3s ease-in-out;
+            width: 100px;
+            margin-bottom: 20px;
         }
-
-        .logo:hover {
-            transform: scale(1.1);
-        }
-
-        #box {
-            color: #ddd;
-            height: 20em;
-            width: 30em;
-            max-width: 80%;
-            max-height: 80%;
-            background-color: #222;
+        .upload-box {
+            width: 300px;
+            height: 200px;
+            background: #222;
             border-radius: 10px;
-            border: 2px solid #444;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            font-size: 20px;
-            transition: all 0.2s;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        #box:hover {
-            border-color: #38f;
-            background-color: #333;
-            color: #fff;
-            transform: scale(1.05);
-        }
-
-        #input {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            cursor: pointer;
-        }
-
-        select, button {
-            padding: 0.6em 0.4em;
-            margin: 0.5em;
-            width: 15em;
-            max-width: 100%;
-            font-family: monospace;
-            font-weight: bold;
+            border: 2px dashed #444;
+            margin-top: 20px;
             font-size: 16px;
-            background-color: #333;
-            color: #ddd;
-            border-radius: 0.4em;
-            border: 1px solid #555;
-            cursor: pointer;
-            transition: 0.2s;
         }
-
-        select:hover, button:hover {
-            background-color: #555;
-            color: #fff;
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
-    <div id="top">
+    <div class="container">
+        <img src="logo.png" alt="EmulatorJS Logo" class="logo">
         <h1>Not EmulatorJS</h1>
-        <img src="docs/Logo-light.png" alt="Logo" class="logo">
+        <div class="upload-box">Drag ROM file or Click Here</div>
     </div>
-    <div id="box">
-        <input type="file" id="input">
-        Drag ROM file or Click Here
-    </div>
+    <div class="footer">Add text here</div>
 </body>
 </html>
