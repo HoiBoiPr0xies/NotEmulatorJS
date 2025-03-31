@@ -1,3 +1,5 @@
+## Not EmulatorJS!
+A self-host and frontend remake on github.io/fastly.net
 
 <div align = center>
 
