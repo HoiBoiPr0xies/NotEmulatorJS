@@ -25,16 +25,14 @@
                 min-height: 100vh;
                 display: flex;
                 flex-direction: column;
-                /* Removed justify-content: center to allow margin-top to work */
                 align-items: center;
             }
 
-            /* New container for the main content */
             .main-content {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-top: 2rem; /* Push the content down slightly */
+                margin-top: 2rem;
             }
 
             #box, #top {
@@ -135,7 +133,7 @@
 
             footer {
                 width: 100%;
-                padding: 0.7rem 1rem; /* Increased vertical padding to make footer taller */
+                padding: 0.7rem 1rem;
                 color: #e0e0e0;
                 font-style: italic;
                 font-size: 0.9rem;
@@ -155,7 +153,7 @@
             .github-button {
                 position: absolute;
                 right: 1rem;
-                bottom: 0.3rem; /* Moved down slightly from 0.5rem */
+                bottom: 1rem; /* Adjusted to match the right spacing for equal distance */
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -204,7 +202,6 @@
     </head>
 
     <body>
-        <!-- Wrapped #top and #box in a new container -->
         <div class="main-content">
             <div id="top">
                 <h1>Not EmulatorJS</h1>
