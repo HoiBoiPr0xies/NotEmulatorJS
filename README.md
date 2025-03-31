@@ -1,6 +1,7 @@
 ## Not EmulatorJS!
 A self-host and frontend remake on github.io/fastly.net
 
+
 <div align = center>
 
 <img width = 300 src = docs/Logo-light.png#gh-dark-mode-only>
